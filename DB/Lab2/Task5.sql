@@ -1,0 +1,4 @@
+SELECT ProductID
+FROM [Sales].[SalesOrderDetail]
+GROUP BY ProductID
+HAVING COUNT(OrderQty) > 5
