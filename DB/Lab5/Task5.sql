@@ -5,7 +5,7 @@ SELECT soh.CustomerID, soh.SalesOrderID, COUNT(*)
   FROM [Sales].[SalesOrderDetail] AS sod 
        JOIN 
        [Sales].[SalesOrderHeader] AS soh 
-       ON soh.SalesOrderID = soh.SalesOrderID
+       ON sod.SalesOrderID = soh.SalesOrderID
  GROUP BY CustomerID, soh.SalesOrderID
 )
 
